@@ -84,7 +84,6 @@ class SeaOS:
         print(platform.win32_ver())
         print(platform.processor())
         print(platform.machine())
-        print(platform.release())
         pass
     
     def cmd(command:str = 'start'):
@@ -125,11 +124,12 @@ class SeaTkinter:
     def __init__(self):
         pass
 
-    global win
-    win = Tk()
+
 
     def WINCreate(title:str, geometry:str = "400x330"):
         """Create window as Tkinter"""
+        global win
+        win = Tk()
         win.title(title)
         win.geometry(geometry)
         win.resizable(width=True, height=True)
@@ -165,4 +165,5 @@ class SeaTkinter:
 
 if __name__ == '__main__':
     print('This is library!')
+    SeaOS.exit()
 else: print('Sealib Imported!')
