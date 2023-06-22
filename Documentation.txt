@@ -1,0 +1,32 @@
+"""<---- Sealib Examples! ---->"""
+
+from sealib import *
+
+"""Creating Window"""
+SeaTkinter.WINCreate(title='TEST', geometry="400x330")
+SeaTkinter.WINLabel(text='Window', bg='white', fg='black', justify='center')
+SeaTkinter.WINPackLabel()
+SeaTkinter.mainloop()
+
+"""SeaTkinter Example"""
+SeaTkinter.example1()
+
+"""Browser commands"""
+SeaBrowser.open('')
+SeaBrowser.search('')
+SeaBrowser.download('')
+
+"""SeaMacro"""
+SeaMacro.click()
+SeaMacro.press('enter')
+SeaMacro.hotkey('win', 'e')
+SeaMacro.write('Testing this function in notepad!') #       <---- This!
+
+"""SeaDev"""
+SeaDEV.Say('Sealib amazing library!')
+SeaDEV.SayToSave()
+
+"""SeaOS"""
+SeaOS.cmd('start')
+SeaOS.sleep(4)
+SeaOS.exit()
