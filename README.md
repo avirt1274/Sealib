@@ -4,7 +4,9 @@ My python library.
 1. To import my library, do this:
 1. Put it in the project folder
 2. in python file: from sealib import *
-3. 
+
+4. END
+
 5. <--COMMANDS_IN_LIBRARY-->
 6. SeaBrowser.open('')
 7. SeaBrowser.search('')
